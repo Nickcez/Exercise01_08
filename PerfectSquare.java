@@ -10,10 +10,17 @@ public class PerfectSquare {
 	
 	public static boolean isPerfectSquare(int num) {
         for(int i = 1; i < num; i++) {
-        	if(i*i = num) 
-        		return true;
-        	else if (i*i > num) return false;
+            // = was not working needs absolute value so ==
+        	if(i*i == num) {
+                  return true;
+            }
+        	else if (i*i > num) {
+                  return false;
+            }
         }
+
+        //must always return something 
+        return false;
     }
 
 }
